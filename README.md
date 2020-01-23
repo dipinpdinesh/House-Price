@@ -3,46 +3,12 @@ Simple Demo for House Price Prediction.This demo is meant to predict the variati
 
   Method: LinearRegression
   Datset: Unbiased
-  
-Data.info()
 
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 4600 entries, 0 to 4599
-Data columns (total 18 columns):
-date             4600 non-null object
-price            4600 non-null float64
-bedrooms         4600 non-null float64
-bathrooms        4600 non-null float64
-sqft_living      4600 non-null int64
-sqft_lot         4600 non-null int64
-floors           4600 non-null float64
-waterfront       4600 non-null int64
-view             4600 non-null int64
-condition        4600 non-null int64
-sqft_above       4600 non-null int64
-sqft_basement    4600 non-null int64
-yr_built         4600 non-null int64
-yr_renovated     4600 non-null int64
-street           4600 non-null object
-city             4600 non-null object
-statezip         4600 non-null object
-country          4600 non-null object
-dtypes: float64(4), int64(9), object(5)
-  
 
-Data.head(10)
+Data.head(1)
 
 	date	price	bedrooms	bathrooms	sqft_living	sqft_lot	floors	waterfront	view	condition	sqft_above	sqft_basement	yr_built	yr_renovated	street	city	statezip	country
 0	2014-05-02 00:00:00	313000.0	3.0	1.50	1340	7912	1.5	0	0	3	1340	0	1955	2005	18810 Densmore Ave N	Shoreline	WA 98133	USA
-1	2014-05-02 00:00:00	2384000.0	5.0	2.50	3650	9050	2.0	0	4	5	3370	280	1921	0	709 W Blaine St	Seattle	WA 98119	USA
-2	2014-05-02 00:00:00	342000.0	3.0	2.00	1930	11947	1.0	0	0	4	1930	0	1966	0	26206-26214 143rd Ave SE	Kent	WA 98042	USA
-3	2014-05-02 00:00:00	420000.0	3.0	2.25	2000	8030	1.0	0	0	4	1000	1000	1963	0	857 170th Pl NE	Bellevue	WA 98008	USA
-4	2014-05-02 00:00:00	550000.0	4.0	2.50	1940	10500	1.0	0	0	4	1140	800	1976	1992	9105 170th Ave NE	Redmond	WA 98052	USA
-5	2014-05-02 00:00:00	490000.0	2.0	1.00	880	6380	1.0	0	0	3	880	0	1938	1994	522 NE 88th St	Seattle	WA 98115	USA
-6	2014-05-02 00:00:00	335000.0	2.0	2.00	1350	2560	1.0	0	0	3	1350	0	1976	0	2616 174th Ave NE	Redmond	WA 98052	USA
-7	2014-05-02 00:00:00	482000.0	4.0	2.50	2710	35868	2.0	0	0	3	2710	0	1989	0	23762 SE 253rd Pl	Maple Valley	WA 98038	USA
-8	2014-05-02 00:00:00	452500.0	3.0	2.50	2430	88426	1.0	0	0	4	1570	860	1985	0	46611-46625 SE 129th St	North Bend	WA 98045	USA
-9	2014-05-02 00:00:00	640000.0	4.0	2.00	1520	6200	1.5	0	0	3	1520	0	1945	2010	6811 55th Ave NE	Seattle	WA 98115	USA
 
 Data.describe()
 
